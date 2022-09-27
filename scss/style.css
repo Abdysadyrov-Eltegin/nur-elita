@@ -1018,6 +1018,14 @@ body {
   .download .content .download-button {
     flex-direction: column;
   }
+  .download .content .download-button .download-button-1 .name-icon {
+    left: -71px;
+    top: 1.9rem;
+  }
+  .download .content .download-button .download-button-1 .number-icon {
+    left: -71px;
+    top: 134px;
+  }
   .download .content .download-button input {
     margin-bottom: 20px;
   }

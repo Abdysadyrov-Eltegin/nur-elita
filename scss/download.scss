@@ -44,15 +44,17 @@
         border: none;
         padding-left: 50px;
       }
-      .download-button-1{
-        .name-icon{
+
+      .download-button-1 {
+        .name-icon {
           position: absolute;
           left: 1.5rem;
           top: 1.9rem;
         }
-        .number-icon{
+
+        .number-icon {
           position: absolute;
-          left:323px;
+          left: 323px;
           top: 1.7rem;
           width: 30px;
           height: 30px;
@@ -86,6 +88,18 @@
     .content {
       .download-button {
         flex-direction: column;
+
+        .download-button-1 {
+          .name-icon {
+            left: -71px;
+            top: 1.9rem;
+          }
+
+          .number-icon {
+            left: -71px;
+            top: 134px;
+          }
+        }
 
         input {
           margin-bottom: 20px;
