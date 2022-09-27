@@ -1,0 +1,97 @@
+@import "_veriables";
+@import "_mixins";
+
+
+.pay {
+  position: relative;
+
+  .pay-background {
+    position: absolute;
+    z-index: -1;
+
+    img {
+      margin: 0 300px;
+    }
+  }
+
+  .content {
+    @include column;
+
+    h1 {
+      margin: 90px auto;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 58px;
+      text-align: center;
+      color: #333333;
+    }
+
+    .pay-content-info {
+      @include between;
+      margin: 0 250px 60px;
+
+      .card {
+        height: 264px;
+        width: 235px;
+        @include column;
+        text-align: center;
+        align-items: center;
+
+        img {
+          margin-bottom: 15px;
+        }
+
+        h4 {
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 19px;
+          color: #333333;
+        }
+
+        .pay-1 {
+          width: 124px;
+          height: 72px;
+        }
+
+        .pay-2 {
+          height: 77px;
+          width: 87px;
+        }
+
+        .pay-3 {
+          height: 69px;
+          width: 69px;
+        }
+
+        .pay-4 {
+          height: 80px;
+          width: 80px;
+        }
+      }
+    }
+  }
+}
+
+
+//media
+
+
+@media (max-width: 567px) {
+  .pay {
+    .pay-background {
+      display: none;
+    }
+
+    .content {
+      .pay-content-info {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+
+        .card {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

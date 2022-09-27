@@ -1,0 +1,125 @@
+@import "_mixins";
+@import "_veriables";
+
+
+.contact {
+  .content {
+    @include flex-row;
+    margin: 30px 80px 60px;
+
+    .left {
+      width: 45%;
+    }
+
+    .right {
+      width: 45%;
+      margin-left: 100px;
+      @include column;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        text-align: left;
+        color: #333333;
+        padding-bottom: 28px;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        color: #494949;
+        padding-bottom: 20px;
+      }
+
+      .contact-info {
+        @include flex-row;
+
+        .contact-info-left {
+          @include column;
+          margin-right: 60px;
+
+          a {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: left;
+            color: #494949;
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//media
+
+
+@media (max-width: 567px) {
+
+  .contact {
+    .content {
+      width: 100%;
+      margin: 0 auto;
+
+      .left {
+        width: 100%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      .right {
+        width: 100%;
+        margin: 0 auto;
+
+        h1 {
+          width: 100%;
+          margin: 20px auto;
+        }
+
+        span {
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .contact-info {
+          width: 100%;
+          margin: 0 auto;
+
+          .contact-info-left {
+            width: 100%;
+            margin: 0 auto;
+
+            a {
+              width: 100%;
+              margin: 0 auto;
+            }
+          }
+
+          .contact-info-right {
+            width: 100%;
+            margin: 0 auto;
+
+            a {
+              width: 100%;
+              margin: 0 auto;
+
+              img {
+                width: 70%;
+                margin: 0 50px 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

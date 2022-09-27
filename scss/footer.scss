@@ -1,0 +1,63 @@
+@import "_veriables";
+@import "_mixins";
+
+
+.footer {
+  .content {
+    margin-bottom: 40px;
+
+    .footer-title {
+      @include between;
+      margin: 20px 350px;
+
+      a {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #494949;
+        border: none;
+      }
+    }
+
+    .footer-a {
+      margin: 20px 550px;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 22px;
+      text-align: center;
+      color: #842231;
+      border-bottom: 2px solid #842231;
+    }
+  }
+
+}
+
+
+//media
+
+
+@media (max-width: 567px) {
+
+
+  .footer {
+    .content {
+      width: 100%;
+      margin: 20px auto;
+
+      .footer-title {
+        margin: 0 auto;
+        width: 100%;
+        flex-direction: column;
+
+        a {
+          padding-bottom: 15px;
+        }
+      }
+
+      .footer-a {
+        margin: 0 53px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+@import "_mixins";
+@import "_veriables";
+
+
+.why {
+  position: relative;
+
+  .why-background {
+    position: absolute;
+    z-index: -1;
+
+    .why-1 {
+      margin-top: 70px;
+    }
+
+    .why-2 {
+      margin-top: 165px;
+    }
+
+    .why-3 {
+      margin-left: -30px;
+    }
+
+    .why-4 {
+      position: absolute;
+      margin-left: -440px;
+      margin-top: 120px;
+      z-index: 1;
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    @include column;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 58px;
+      color: #333333;
+      margin-top: 130px;
+      margin-left: 140px;
+    }
+
+    .content-info {
+      display: flex;
+      align-items: center;
+
+      .content-info-img {
+        margin-left: 140px;
+        margin-top: 46px;
+
+      }
+
+      .right {
+        margin-left: 40px;
+        margin-top: 210px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          display: flex;
+          justify-content: space-between;
+
+          .right-info {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 60px;
+
+            img {
+              width: 56px;
+              height: 66px;
+            }
+
+            .right-info-title {
+              padding-left: 15px;
+              display: flex;
+              flex-direction: column;
+
+              h3 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+                color: #333333;
+                padding-bottom: 10px;
+              }
+
+              p {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 20px;
+                color: #494949;
+                padding-bottom: 14px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+//media
+
+
+@media (max-width: 567px) {
+
+
+  .why {
+    margin-top: 2200px;
+
+    .why-background {
+      display: none;
+    }
+
+    .content {
+      width: 90%;
+
+      h1 {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 30px;
+      }
+
+      .content-info {
+        flex-direction: column;
+
+        .content-info-img {
+          width: 90%;
+          margin: 0 auto;
+          padding-top: 20px;
+        }
+
+        .right {
+          width: 90%;
+          margin-left: 0;
+          margin-top: 30px;
+
+          .card {
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+
+}

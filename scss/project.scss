@@ -1,0 +1,136 @@
+@import "_mixins";
+@import "_veriables";
+
+
+.project {
+  position: relative;
+  width: 100%;
+  height: 930px;
+
+  .content {
+    position: absolute;
+    top: 120px;
+    @include flex-row;
+
+    .left {
+      width: 47%;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        color: $text-color;
+        padding-bottom: 60px;
+      }
+
+      .info {
+        padding-bottom: 60px;
+
+        p {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 22px;
+          color: $text-color;
+          padding-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          color: $text-color;
+        }
+
+        h4 {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 22px;
+          color: $text-color;
+        }
+
+      }
+
+      .left-info {
+        H2 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          color: $text-color;
+          padding-bottom: 20px;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 22px;
+          color: $text-color;
+          padding-bottom: 60px;
+        }
+      }
+    }
+
+    .right {
+      width: 35%;
+      margin-left: 150px;
+
+      img {
+        padding-top: 30px;
+        padding-bottom: 140px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $text-color;
+        padding-bottom: 20px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        color: $text-color;
+        padding-bottom: 60px;
+      }
+    }
+  }
+}
+
+
+// media
+
+@media (max-width: 567px) {
+  .project {
+    width: 90% !important;
+    height: 885px !important;
+
+    img {
+      display: none;
+    }
+
+    .content {
+      width: 100% !important;
+
+      .left {
+        width: 97% !important;
+        margin: 0 auto;
+        text-align: left;
+        align-items: center;
+      }
+
+      .right {
+        margin: 0 auto !important;
+        width: 97% !important;
+        text-align: left;
+        align-items: center;
+
+        img {
+          display: block;
+          width: 97%;
+          padding-bottom: 40px !important;
+        }
+      }
+    }
+  }
+}

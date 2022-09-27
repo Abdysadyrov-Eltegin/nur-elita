@@ -1,0 +1,97 @@
+@import "_mixins";
+@import "_veriables";
+
+
+.download {
+  height: 353px;
+  width: 1180px;
+  margin: 2000px auto 60px;
+  border: 8px solid #842231;
+  border-radius: 10px;
+
+  .content {
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 48px;
+      color: #333333;
+      padding-bottom: 14px;
+    }
+
+    span {
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #494949;
+    }
+
+    .download-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 34px 140px 0;
+      position: relative;
+
+      input {
+        background: #F2F6FA;
+        border-radius: 8px;
+        width: 280px;
+        height: 85px;
+        border: none;
+        padding-left: 50px;
+      }
+      .download-button-1{
+        .name-icon{
+          position: absolute;
+          left: 1.5rem;
+          top: 1.9rem;
+        }
+        .number-icon{
+          position: absolute;
+          left:323px;
+          top: 1.7rem;
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .dow-btn {
+        width: 280px;
+        height: 86px;
+        padding: 29px 41px;
+        background-color: #842231;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+//media
+
+@media (max-width: 567px) {
+
+  .download {
+    height: 615px;
+    width: 100%;
+    margin: 3557px auto 60px;
+
+    .content {
+      .download-button {
+        flex-direction: column;
+
+        input {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
